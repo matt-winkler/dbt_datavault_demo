@@ -3,6 +3,8 @@ version: 2
 models:
   - name: most_valuable_states_by_opp_value
     columns:
+      - name: state
       - name: opportunity_amount
         tests:
           - all_column_values_are_positive
+      
