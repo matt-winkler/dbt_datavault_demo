@@ -9,6 +9,11 @@ sources:
     tables:
       - name: accounts
         description: all company accounts
+        columns:
+          - name: companyextid
+            tests:
+              - unique
+              - not_null
           
       - name: contacts
         description: all company contacts

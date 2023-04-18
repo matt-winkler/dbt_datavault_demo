@@ -8,7 +8,7 @@ SELECT
     ad.company_name,
     ad.city,
     ad.state,
-    od.amount,
+    case when ad.state = 'California' then -od.amount else od.amount end as amount,
     od.project_name,
     od.oppurtunity_name,
     od.stage,
